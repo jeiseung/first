@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+    }
+    @font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    h1 {
+        color: blueviolet;
+        font-family: 'Cafe24Ohsquare';
+    }
+</style>
 <body>
-    <h1>{{name}}{{name2}}{{name3}}</h1>
-    <p></p>
+    
+    <img src="data:image/webp;base64,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" alt="picture"
+    <h1>안녕하세요! 저는 {{name}} 입니다.</h1>
+    <p>저의 취미와 관심사는 {{hobby}} {{interest}}입니다.</p>
+
+    <a href="https://github.com/jeiseung" target="_blank" style="
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: black; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px;">
+    내 GitHub를 방문
+
 </body>
 </html>
